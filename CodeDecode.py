@@ -29,6 +29,8 @@ for numb in toHex:
 
 finalHex = '0x' + finalHex
 print(finalHex)
+
+
 '''
 
 key = input("Chiave? ")
