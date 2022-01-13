@@ -1,3 +1,5 @@
+import myEmail as em
+
 a_string = input("Stringa da codificare? ")
 
 ASCII_values = []
@@ -27,3 +29,5 @@ pwd = str(hex(pwd))
 pwd = pwd[2::]
 print("Password generata: ", pwd)
 #print(int(aa, 16))
+
+em.sendEmail(pwd)
