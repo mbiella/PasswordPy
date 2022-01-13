@@ -14,28 +14,10 @@ for numb in ASCII_values:
 
 finalNumb = int(finalNumb)
 
-'''
-toHex = []
-
-for digit in ASCII_values:
-    toHex.append(hex(digit))
-
-#print(toHex)
-
-finalHex=''
-
-for numb in toHex:
-    finalHex=finalHex + numb[2::]
-
-finalHex = '0x' + finalHex
-print(finalHex)
-
-
-'''
 
 key = input("Chiave? ")
-print("Chiave ", key)
-print("Numero", finalNumb)
+#print("Chiave ", key)
+#print("Numero", finalNumb)
 
 pwd = finalNumb * int(key)
 
@@ -43,5 +25,5 @@ pwd = finalNumb * int(key)
 aa = hex(pwd)
 pwd = str(hex(pwd))
 pwd = pwd[2::]
-print(pwd)
-print(int(aa, 16))
+print("Password generata: ", pwd)
+#print(int(aa, 16))
