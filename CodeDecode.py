@@ -16,7 +16,6 @@ for numb in ASCII_values:
 
 finalNumb = int(finalNumb)
 
-
 key = input("Chiave? ")
 #print("Chiave ", key)
 #print("Numero", finalNumb)
@@ -24,10 +23,14 @@ key = input("Chiave? ")
 pwd = finalNumb * int(key)
 
 #print(pwd)
-aa = hex(pwd)
 pwd = str(hex(pwd))
 pwd = pwd[2::]
 print("Password generata: ", pwd)
 #print(int(aa, 16))
+sendMail = input("Vuoi inviare la password per mail s/n? ")
 
-em.sendEmail(pwd)
+if(sendMail == 's'):
+    dest = input("Scrivi il destinatario: ")
+    em.sendEmail(pwd, dest)
+
+print("Fine programma")
